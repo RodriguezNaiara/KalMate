@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.kalmate-titulo {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    color: #4a3520;
+    font-size: 50px; 
+    margin: auto;
+}
+body {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    background-color: #fef9e3 !important;
+}
+.logo-contenedor {
+    width: 120px;
+}
+.logo-contenedor img {
+    width: 100%;
+}
+.header-spacer{
+    width: 120px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    background-color: #fef9e3;
+    border-bottom: 1px solid #ccc;
+}
+nav {
+    background-color: #C4C1A2;
+    padding: 10px;
+    position: relative;
+}
+nav .menu a {
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    color: #4a3520;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    border: none;
+    border-radius: 0;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(74,53,32, 0.2);
+    transition: background-color 0.3s ease;
+}
+nav .menu li:last-child a {
+    border-bottom: none;
+}
+nav .menu a:hover {
+    background-color: rgba(74,53,32, 0.1);
+    color: #4a3520;
+}
+nav .menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: #C4C1A2;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s;
+    z-index: 10;
+}
+nav label {
+    color: #4a3520;
+    font-family: 'Dosis', sans-serif;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 8px;
+    background-color: #C4C1A2;
+    border-radius: 5px;
+    position: relative;
+    z-index: 11;
+}
+
+section#sobre-nosotros {
+  padding: 40px;
+  background-color: #f2f2f2;
+}
+
+section#sobre-nosotros h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+section#sobre-nosotros p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: center;
+}

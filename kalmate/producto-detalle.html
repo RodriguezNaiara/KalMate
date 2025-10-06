@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KalMate</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        .producto-detalle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            background-color: #fef9e3;
+        }
+
+        #producto-info {
+            background: #fef9e3;
+            border: 1px solid #C4C1A2;
+            border-radius: 10px;
+            padding: 25px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        #producto-imagen-container {
+            margin-bottom: 20px;
+        }
+
+        #producto-imagen {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        #producto-titulo {
+            text-decoration: none;
+            font-family: 'Dosis', sans-serif;
+            margin: 10px 0 5px;
+            font-size: 35px;
+            color: #4a3520;
+        }
+
+        #producto-precio {
+            text-decoration: none;
+            font-family: 'Dosis', sans-serif;
+            color: #4a3520;
+            font-size: 25px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #producto-descripcion {
+            text-decoration: none;
+            font-family: 'Dosis', sans-serif;
+            color: #4a3520;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        #agregar-al-carrito-btn {
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+      <div class="logo-contenedor">
+        <img src="logo.png" alt="Logo KalMate">
+      </div>
+        <h1 class="kalmate-titulo">KalMate</h1>
+      <div class="header-spacer"></div>
+    </header>
+  <nav>
+      <label for="menu-toggle">☰ Menú</label>
+      <input type="checkbox" id="menu-toggle" />
+      <ul class="menu">
+          <li><a href="grupo6test.html">Inicio</a></li>
+          <li><a href="catalogofacha.html">Productos</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Nosotros</a></li>
+      </ul>
+  </nav>
+
+<main class="producto-detalle-container">
+        <div id="producto-info">
+            <h1 id="producto-titulo"></h1>
+            <div id="producto-imagen-container">
+                <img id="producto-imagen" src="" alt="Imagen del producto">
+            </div>
+            <p id="producto-precio"></p>
+            <p id="producto-descripcion"></p>
+            <button id="agregar-al-carrito-btn" class="boton-contenedor">Agregar al carrito</button>
+        </div>
+    </main>
+
+    <footer class="footer-container">
+        <p>Información de contacto | Redes sociales | Políticas de devolución</p>
+    </footer>
+
+    <script src="productos.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
